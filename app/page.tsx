@@ -1,9 +1,6 @@
-import Link from "next/link"
 import { HeroSection } from "@/components/hero-section"
 import { ProjectCard } from "@/components/project-card"
 import { featuredProjects } from "@/lib/data"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
 
 export default function Home() {
   return (
@@ -11,7 +8,7 @@ export default function Home() {
       <HeroSection />
 
       {/* Featured Work Section */}
-      <section className="relative container overflow-hidden py-12 md:py-24">
+      <section id="work" className="relative w-full scroll-mt-16 overflow-hidden py-12 md:py-24">
         {/* Animated background accent */}
         <div className="from-primary/10 absolute top-0 right-0 -z-10 h-96 w-96 animate-pulse rounded-full bg-gradient-to-br to-purple-500/10 blur-3xl" />
         <div
@@ -19,22 +16,14 @@ export default function Home() {
           style={{ animationDelay: "1s" }}
         />
 
-        <div className="space-y-8">
-          <div className="flex items-center justify-between">
-            <div className="space-y-2">
-              <h2 className="from-foreground to-foreground/70 bg-gradient-to-r bg-clip-text text-3xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-5xl">
-                Featured Work
-              </h2>
-              <p className="text-muted-foreground text-lg">
-                A selection of my recent projects and case studies.
-              </p>
-            </div>
-            <Button asChild variant="ghost" className="group hover:bg-primary/10 transition-all">
-              <Link href="/work">
-                View All
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
-            </Button>
+        <div className="container mx-auto space-y-8 px-4">
+          <div className="space-y-2">
+            <h2 className="from-foreground to-foreground/70 bg-gradient-to-r bg-clip-text text-3xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-5xl">
+              Featured Work
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              A selection of my recent projects and case studies.
+            </p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -46,8 +35,11 @@ export default function Home() {
       </section>
 
       {/* Skills Section */}
-      <section className="from-muted/50 to-background relative border-t bg-gradient-to-b">
-        <div className="container py-12 md:py-24">
+      <section
+        id="contact"
+        className="from-muted/50 to-background relative w-full scroll-mt-16 border-t bg-gradient-to-b"
+      >
+        <div className="container mx-auto px-4 py-12 md:py-24">
           <div className="mx-auto max-w-3xl space-y-8 text-center">
             <div className="space-y-2">
               <h2 className="from-foreground to-foreground/70 bg-gradient-to-r bg-clip-text text-3xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-5xl">

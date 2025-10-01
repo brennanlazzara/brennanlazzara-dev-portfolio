@@ -1,4 +1,3 @@
-import Link from "next/link"
 import { ArrowRight, Github, Linkedin, Mail, Zap } from "lucide-react"
 import { Button } from "./ui/button"
 
@@ -42,10 +41,10 @@ export function HeroSection() {
             size="lg"
             className="shadow-primary/25 hover:shadow-primary/30 shadow-lg transition-all hover:scale-105 hover:shadow-xl"
           >
-            <Link href="/work">
+            <a href="#work" className="flex items-center">
               View My Work
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Link>
+              <ArrowRight className="ml-2 h-4 w-4 rotate-90 transition-transform group-hover:translate-y-1" />
+            </a>
           </Button>
           <Button
             asChild
@@ -53,7 +52,7 @@ export function HeroSection() {
             size="lg"
             className="transition-transform hover:scale-105"
           >
-            <Link href="/contact">Get In Touch</Link>
+            <a href="#contact">Get In Touch</a>
           </Button>
         </div>
 
