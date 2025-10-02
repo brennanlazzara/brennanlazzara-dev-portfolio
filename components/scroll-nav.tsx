@@ -6,6 +6,7 @@ const sections = [
   { id: "hero", label: "Home" },
   { id: "work", label: "Work" },
   { id: "about", label: "About" },
+  { id: "skills", label: "Skills" },
   { id: "contact", label: "Contact" },
 ]
 
@@ -30,6 +31,7 @@ export function ScrollNav() {
   }, [])
 
   const scrollToSection = (id: string) => {
+    setActiveSection(id)
     if (id === "hero") {
       window.scrollTo({ top: 0, behavior: "smooth" })
     } else {

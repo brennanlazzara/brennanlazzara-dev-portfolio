@@ -21,25 +21,37 @@ export default function Home() {
         />
 
         <div className="container mx-auto space-y-8 px-4">
-          <div className="space-y-2">
+          <div className="space-y-2 text-center">
             <h2 className="from-foreground to-foreground/70 bg-gradient-to-r bg-clip-text text-3xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-5xl">
-              Featured Work
+              Featured Project
             </h2>
             <p className="text-muted-foreground text-lg">
-              A selection of my recent projects and case studies.
+              My current side project building an Italian learning app.
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {featuredProjects.map((project) => (
-              <ProjectCard key={project.slug} project={project} />
-            ))}
+          <div className="flex justify-center">
+            <div className="w-full max-w-2xl">
+              <ProjectCard project={featuredProjects[0]} />
+            </div>
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="relative w-full scroll-mt-16 border-t py-12 md:py-24">
+      <section
+        id="about"
+        className="from-background via-muted/20 to-background relative w-full scroll-mt-16 border-t bg-gradient-to-br py-12 md:py-24"
+      >
+        {/* Animated background accent */}
+        <div
+          className="to-primary/10 absolute top-1/4 left-0 -z-10 h-72 w-72 animate-pulse rounded-full bg-gradient-to-br from-green-400/10 blur-3xl"
+          style={{ animationDelay: "0.5s" }}
+        />
+        <div
+          className="from-primary/10 absolute right-0 bottom-1/4 -z-10 h-72 w-72 animate-pulse rounded-full bg-gradient-to-tl to-green-400/10 blur-3xl"
+          style={{ animationDelay: "2s" }}
+        />
         <div className="container mx-auto px-2">
           <div className="mx-auto max-w-4xl space-y-12">
             {/* Header */}
@@ -69,7 +81,7 @@ export default function Home() {
 
             {/* Experience Highlights */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold">Experience Highlights</h3>
+              <h3 className="text-2xl font-bold text-center underline">Experience Highlights</h3>
               <div className="grid gap-6 md:grid-cols-2">
                 <Card>
                   <CardContent className="pt-6">
@@ -125,10 +137,13 @@ export default function Home() {
       </section>
 
       {/* Skills Section */}
-      <section className="from-muted/50 to-background relative w-full border-t bg-gradient-to-b">
+      <section
+        id="skills"
+        className="from-muted/50 to-background relative w-full scroll-mt-16 border-t bg-gradient-to-b"
+      >
         <div className="container mx-auto px-4 py-12 md:py-24">
-          <div className="mx-auto max-w-4xl space-y-8 text-center">
-            <div className="space-y-2">
+          <div className="mx-auto max-w-4xl space-y-8">
+            <div className="space-y-2 text-center">
               <h2 className="from-foreground to-foreground/70 bg-gradient-to-r bg-clip-text text-3xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-5xl">
                 Technical Skills
               </h2>
@@ -137,7 +152,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid gap-6 text-left md:grid-cols-3">
+            <div className="mx-auto grid max-w-3xl gap-6 text-center md:grid-cols-3">
               <div className="space-y-3">
                 <h3 className="font-semibold">Languages</h3>
                 <ul className="text-muted-foreground space-y-1 text-sm">
@@ -213,7 +228,14 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="relative w-full scroll-mt-16 border-t py-12 md:py-24">
+      <section
+        id="contact"
+        className="from-muted/30 to-background relative w-full scroll-mt-16 border-t bg-gradient-to-t py-12 md:py-24"
+      >
+        {/* Grid pattern overlay */}
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
+        {/* Center spotlight effect */}
+        <div className="from-primary/20 absolute top-1/2 left-1/2 -z-10 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-r to-green-400/20 blur-3xl" />
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl space-y-12">
             {/* Header */}

@@ -27,8 +27,9 @@ export const projects: Project[] = [
     title: "VoceViva — Italian Learning App",
     role: "Founder & Full-Stack Engineer",
     period: "2024–2025",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel", "PostgreSQL"],
-    summary: "A focused language-learning app with clean UX and verb workflows (presente, passato prossimo, futuro).",
+    stack: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel", "PostgreSQL"],
+    summary:
+      "A focused language-learning app with clean UX and verb workflows (presente, passato prossimo, futuro).",
     impact: [
       "Migrated legacy React/Chakra to Next.js App Router; TTI improved ≈35%",
       "Seeded 89 verbs (regular + irregular) with typed data model",
@@ -36,11 +37,12 @@ export const projects: Project[] = [
     ],
     links: {
       github: "https://github.com/brennanlazzara/voce-viva",
-      case_study: "/work/voceviva",
+      case_study: "voceviva",
     },
     featured: true,
     category: "work",
-    description: "Goal: faster iteration and better DX for shipping language exercises. Re-architected routes, added typed data layer, and tuned performance.",
+    description:
+      "Goal: faster iteration and better DX for shipping language exercises. Re-architected routes, added typed data layer, and tuned performance.",
     challenges: [
       "Next.js migration (routing, layouts, server components)",
       "Typed seed model across multiple tenses",
@@ -56,7 +58,7 @@ export const projects: Project[] = [
       "Cleaner SSR/SEO surface for public pages",
     ],
     hero: "/images/voceviva-hero.png",
-    images: ["/images/voceviva-1.png", "/images/voceviva-2.png", "/images/voceviva-3.png"],
+    images: ["/images/voceviva-1.png", "/images/voceviva-2.png", "/images/voceviva-3.png", "/images/voceviva-4.png"],
   },
   {
     slug: "pdp-social-proof-dynamic-yield",
@@ -64,7 +66,8 @@ export const projects: Project[] = [
     role: "Senior Frontend Engineer",
     period: "2024",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Dynamic Yield", "React"],
-    summary: "Implemented social proof messaging on Product Detail Pages using Dynamic Yield, reducing layout shift and improving conversion metrics.",
+    summary:
+      "Implemented social proof messaging on Product Detail Pages using Dynamic Yield, reducing layout shift and improving conversion metrics.",
     impact: [
       "Reduced cumulative layout shift (CLS) by 40% during campaign load",
       "Implemented SSR hooks for clean campaign-off state with zero regressions",
@@ -76,7 +79,8 @@ export const projects: Project[] = [
     },
     featured: true,
     category: "work",
-    description: "Led the implementation of dynamic social proof messaging on high-traffic PDPs to increase customer trust and drive conversions through real-time inventory and popularity signals.",
+    description:
+      "Led the implementation of dynamic social proof messaging on high-traffic PDPs to increase customer trust and drive conversions through real-time inventory and popularity signals.",
     challenges: [
       "Preventing layout shift during async campaign load",
       "Ensuring graceful degradation when campaigns are disabled",
@@ -103,7 +107,8 @@ export const projects: Project[] = [
     role: "Senior Frontend Engineer",
     period: "2024",
     stack: ["Next.js", "TypeScript", "Shopify Commerce API", "React", "Tailwind CSS"],
-    summary: "Replaced 404 errors with proper OOS state on PDPs, fixed cursor semantics, and improved crawlability for out-of-stock products.",
+    summary:
+      "Replaced 404 errors with proper OOS state on PDPs, fixed cursor semantics, and improved crawlability for out-of-stock products.",
     impact: [
       "Eliminated 10K+ monthly 404 errors for temporarily OOS products",
       "Improved SEO by preserving canonical URLs and product metadata",
@@ -115,7 +120,8 @@ export const projects: Project[] = [
     },
     featured: true,
     category: "work",
-    description: "Redesigned out-of-stock product experience on PDPs to preserve SEO value, improve user experience, and capture re-stock interest instead of showing generic 404 pages.",
+    description:
+      "Redesigned out-of-stock product experience on PDPs to preserve SEO value, improve user experience, and capture re-stock interest instead of showing generic 404 pages.",
     challenges: [
       "Handling OOS products without breaking SEO or serving 404s",
       "Fixing incorrect cursor semantics on disabled add-to-cart buttons",
@@ -142,7 +148,8 @@ export const projects: Project[] = [
     role: "Lead Frontend Developer",
     period: "2024 - Present",
     stack: ["React", "TypeScript", "Next.js", "TailwindCSS", "Recharts", "PostgreSQL"],
-    summary: "Built a comprehensive analytics dashboard for enterprise clients, handling millions of data points with real-time updates.",
+    summary:
+      "Built a comprehensive analytics dashboard for enterprise clients, handling millions of data points with real-time updates.",
     impact: [
       "Reduced data processing time by 60% through optimized React rendering",
       "Improved user engagement by 45% with intuitive data visualizations",
@@ -158,7 +165,8 @@ export const projects: Project[] = [
       "/images/enterprise-dashboard-2.jpg",
       "/images/enterprise-dashboard-3.jpg",
     ],
-    description: "A full-featured analytics platform that provides real-time insights into business metrics, customer behavior, and operational efficiency.",
+    description:
+      "A full-featured analytics platform that provides real-time insights into business metrics, customer behavior, and operational efficiency.",
     challenges: [
       "Handling large datasets without compromising performance",
       "Creating intuitive visualizations for complex data",
@@ -183,7 +191,8 @@ export const projects: Project[] = [
     role: "Full Stack Developer",
     period: "2023 - 2024",
     stack: ["Next.js", "TypeScript", "Prisma", "tRPC", "Stripe", "AWS"],
-    summary: "Developed a project management SaaS platform with team collaboration features, file sharing, and integrated billing.",
+    summary:
+      "Developed a project management SaaS platform with team collaboration features, file sharing, and integrated billing.",
     impact: [
       "Onboarded 500+ teams in first 3 months",
       "Processed $100K+ in subscription revenue",
@@ -203,12 +212,9 @@ export const projects: Project[] = [
     role: "Creator & Maintainer",
     period: "2023 - Present",
     stack: ["React", "TypeScript", "Storybook", "Vite", "CSS-in-JS"],
-    summary: "Created and maintain an accessible, customizable UI component library with 50+ components.",
-    impact: [
-      "1,000+ GitHub stars",
-      "5,000+ weekly npm downloads",
-      "20+ open source contributors",
-    ],
+    summary:
+      "Created and maintain an accessible, customizable UI component library with 50+ components.",
+    impact: ["1,000+ GitHub stars", "5,000+ weekly npm downloads", "20+ open source contributors"],
     links: {
       github: "https://github.com/yourusername/ui-library",
       live: "https://ui-library-docs.example.com",
@@ -223,7 +229,8 @@ export const projects: Project[] = [
     role: "Frontend Lead",
     period: "2023",
     stack: ["React Native", "TypeScript", "Redux", "Firebase"],
-    summary: "Led the complete redesign of a mobile app used by 100K+ users, focusing on performance and UX improvements.",
+    summary:
+      "Led the complete redesign of a mobile app used by 100K+ users, focusing on performance and UX improvements.",
     impact: [
       "Improved app performance by 70%",
       "Increased user retention by 35%",
@@ -260,7 +267,8 @@ export const projects: Project[] = [
     role: "Frontend Developer",
     period: "2022 - 2023",
     stack: ["Next.js", "TypeScript", "Shopify API", "TailwindCSS", "Framer Motion"],
-    summary: "Developed a custom e-commerce frontend with advanced product filtering, cart management, and checkout flow.",
+    summary:
+      "Developed a custom e-commerce frontend with advanced product filtering, cart management, and checkout flow.",
     impact: [
       "Increased conversion rate by 28%",
       "Reduced cart abandonment by 40%",
