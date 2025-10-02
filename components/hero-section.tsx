@@ -1,9 +1,12 @@
-import { ArrowRight, Github, Linkedin, Mail, Zap } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Mail, Zap, Download } from "lucide-react"
 import { Button } from "./ui/button"
 
 export function HeroSection() {
   return (
-    <section className="relative flex min-h-[calc(100vh-4rem)] w-full flex-col items-center justify-center overflow-hidden py-12 text-center md:py-24">
+    <section
+      id="hero"
+      className="relative flex min-h-[calc(100vh-4rem)] w-full flex-col items-center justify-center overflow-hidden py-12 text-center md:py-24"
+    >
       {/* Animated background gradient */}
       <div className="from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/5 absolute inset-0 -z-10 bg-gradient-to-br via-transparent" />
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.1),rgba(255,255,255,0))]" />
@@ -53,6 +56,17 @@ export function HeroSection() {
             className="transition-transform hover:scale-105"
           >
             <a href="#contact">Get In Touch</a>
+          </Button>
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className="transition-transform hover:scale-105"
+          >
+            <a href="/resume.pdf" download className="flex items-center">
+              <Download className="mr-2 h-4 w-4" />
+              Resume
+            </a>
           </Button>
         </div>
 
