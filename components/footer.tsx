@@ -1,4 +1,3 @@
-import Link from "next/link"
 import { Github, Linkedin, Mail } from "lucide-react"
 
 export function Footer() {
@@ -7,56 +6,12 @@ export function Footer() {
   return (
     <footer className="bg-background w-full border-t">
       <div className="container mx-auto px-4 py-8 md:py-12">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-2">
           <div className="space-y-3">
             <h3 className="text-lg font-semibold">Brennan Lazzara</h3>
             <p className="text-muted-foreground text-sm">
               Developer building modern web experiences.
             </p>
-          </div>
-
-          <div className="space-y-3">
-            <h4 className="text-sm font-semibold">Navigation</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="/work"
-                  className="text-muted-foreground hover:text-foreground focus-visible:ring-ring transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
-                >
-                  Work
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/projects"
-                  className="text-muted-foreground hover:text-foreground focus-visible:ring-ring transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
-                >
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="text-muted-foreground hover:text-foreground focus-visible:ring-ring transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
-                >
-                  About
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="space-y-3">
-            <h4 className="text-sm font-semibold">Connect</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-muted-foreground hover:text-foreground focus-visible:ring-ring transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
           </div>
 
           <div className="space-y-3">
