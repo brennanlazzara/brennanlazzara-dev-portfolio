@@ -23,6 +23,54 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    slug: "hydra",
+    title: "Hydra — Restaurant Supply Platform",
+    role: "Founder & Full-Stack Engineer",
+    period: "2024–2025",
+    stack: ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS", "NextAuth", "Vercel", "Zustand"],
+    summary:
+      "A multi-role B2B platform where restaurants, vendors, drivers, and agents manage catalog, orders, inventory, and deliveries in one place.",
+    impact: [
+      "Built complete procurement system with 4 role-based portals and 25+ dashboard routes",
+      "Implemented transaction-safe cart with agreement pricing integration",
+      "Seeded 335 test files covering pricing logic, cart validation, and catalog filters",
+      "Deployed on Vercel with Neon Postgres and CI/CD preview environments",
+      "Demo mode enabled rapid stakeholder testing with 6 pre-configured user personas",
+    ],
+    links: {
+      live: "https://hydra-sable-tau.vercel.app",
+      github: "https://github.com/HydraItalia/hydra",
+      case_study: "hydra",
+    },
+    featured: true,
+    category: "personal",
+    description:
+      "Goal: Modernize HORECA procurement in Roma by connecting restaurants with multiple vendors through a unified platform with role-based access, smart pricing agreements, and real-time inventory.",
+    challenges: [
+      "Multi-role architecture (Admin, Agent, Vendor, Client, Driver) with distinct workflows",
+      "Complex pricing logic with client-specific agreements (base, discount, override modes)",
+      "Cart state synchronization across server/client with optimistic updates",
+      "Magic link authentication with demo mode for rapid testing",
+      "Type-safe data layer across 15+ Prisma models with referential integrity",
+    ],
+    solutions: [
+      "App Router + RBAC: Server-side auth checks with role-specific navigation",
+      "Agreement-aware pricing engine with strict TypeScript validation",
+      "Zustand + Server Actions: Optimistic cart updates with automatic rollback on failure",
+      "NextAuth v5 with custom demo provider for one-click signin during development",
+      "Prisma schema with composite keys, soft deletes, and audit logging",
+    ],
+    results: [
+      "Full order lifecycle from multi-vendor catalog → cart → checkout → delivery tracking",
+      "Client-specific pricing with discount agreements and override support",
+      "Real-time inventory with lead time tracking across vendors",
+      "Audit trails for compliance and change tracking",
+      "Scalable foundation for expansion beyond Roma region",
+    ],
+    hero: "/images/hydra-hero.png",
+    images: ["/images/hydra-1.png", "/images/hydra-2.png", "/images/hydra-3.png", "/images/hydra-4.png"],
+  },
+  {
     slug: "voceviva",
     title: "VoceViva — Italian Learning App",
     role: "Founder & Full-Stack Engineer",
@@ -36,6 +84,7 @@ export const projects: Project[] = [
       "Deployed CI/CD on Vercel with preview envs per PR",
     ],
     links: {
+      live: "https://italian-with-brenni-w5zj.vercel.app/",
       github: "https://github.com/brennanlazzara/voce-viva",
       case_study: "voceviva",
     },

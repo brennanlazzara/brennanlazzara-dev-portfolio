@@ -23,17 +23,25 @@ export default function Home() {
         <div className="container mx-auto space-y-8 px-4">
           <div className="space-y-2 text-center">
             <h2 className="from-foreground to-foreground/70 bg-gradient-to-r bg-clip-text text-3xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-5xl">
-              Featured Project
+              Featured Projects
             </h2>
             <p className="text-muted-foreground text-lg">
-              My current side project building an Italian learning app.
+              My current side projects: 
+              <br />
+              <strong>VoceViva</strong>, an Italian learning app and <strong>Hydra</strong>,
+              
+              <span className="text-muted-foreground"> a restaurant supply platform.</span>
+            </p>
+            <p className="text-muted-foreground text-sm">
+              Click on the cards below to learn more about my work on VoceViva and Hydra.
+              <br />
+              <span className="text-muted-foreground">More projects coming soon!</span>
             </p>
           </div>
 
-          <div className="flex justify-center">
-            <div className="w-full max-w-2xl">
-              <ProjectCard project={featuredProjects[0]} />
-            </div>
+          <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2">
+            <ProjectCard project={featuredProjects[0]} />
+            <ProjectCard project={featuredProjects[1]} />
           </div>
         </div>
       </section>
