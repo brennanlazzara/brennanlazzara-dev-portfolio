@@ -66,9 +66,6 @@ export default function Home() {
               <h2 className="from-foreground to-foreground/70 bg-gradient-to-r bg-clip-text text-3xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-5xl">
                 About Me
               </h2>
-              <p className="text-muted-foreground text-xl">
-                Developer, problem solver, and continuous learner.
-              </p>
             </div>
 
             {/* Bio */}
