@@ -26,10 +26,9 @@ export default function Home() {
               Featured Projects
             </h2>
             <p className="text-muted-foreground text-lg">
-              My current side projects: 
+              My current side projects:
               <br />
               <strong>VoceViva</strong>, an Italian learning app and <strong>Hydra</strong>,
-              
               <span className="text-muted-foreground"> a restaurant supply platform.</span>
             </p>
             <p className="text-muted-foreground text-sm">
@@ -75,21 +74,32 @@ export default function Home() {
             {/* Bio */}
             <div className="prose prose-gray dark:prose-invert max-w-none space-y-4 text-center">
               <p className="text-muted-foreground text-lg">
-                I&apos;m a full-stack developer with a passion for building exceptional digital
-                experiences. With expertise in modern web technologies like React, Next.js, and
-                TypeScript, I specialize in creating performant, accessible, and user-friendly
-                applications.
+                I'm a frontend architect based in Brooklyn, working primarily in React, Next.js, and
+                TypeScript. Nine years in, I've shipped storefront features at Carter's serving
+                millions of customers, built mission-critical MERN tooling at Cox Communications
+                used by EMS and law enforcement teams, and most recently founded Hydra — a B2B
+                marketplace for the Italian hospitality industry, taken from concept to production
+                deployment.
               </p>
               <p className="text-muted-foreground text-lg">
-                On the side, I’m building VoceViva, an Italian-learning app, where I experiment with
-                typed data models, performance budgets, and simple, joyful UI. I’m currently open to
-                opportunities where thoughtful engineering and product sense matter.
+                I care about the parts of frontend work that don't always get talked about: state
+                architecture that doesn't collapse under feature pressure, component systems that
+                other engineers actually want to use, and TypeScript that makes wrong code hard to
+                write. I'm currently leading platform architecture at Chatterworks, a pre-Series A
+                SaaS startup.
+              </p>
+              <p className="text-muted-foreground text-lg">
+                On the side I'm building VoceViva, an Italian-learning app — a chance to experiment
+                with typed data models, performance budgets, and simple, joyful UI without a roadmap
+                meeting in sight. The Italian connection isn't incidental: I lived in Rome for five
+                years before recently moving back to the US. Open to senior and staff frontend roles
+                where the engineering work is genuinely hard and the team takes craft seriously.
               </p>
             </div>
 
             {/* Experience Highlights */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-center underline">Experience Highlights</h3>
+              <h3 className="text-center text-2xl font-bold underline">Experience Highlights</h3>
               <div className="grid gap-6 md:grid-cols-2">
                 <Card>
                   <CardContent className="pt-6">
