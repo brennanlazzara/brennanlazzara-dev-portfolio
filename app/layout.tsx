@@ -26,11 +26,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://brennanlazzara.dev",
   },
-  icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/apple-touch-icon.png",
-  },
   openGraph: {
     type: "website",
     locale: "en_US",
