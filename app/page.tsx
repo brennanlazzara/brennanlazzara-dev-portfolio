@@ -101,10 +101,11 @@ export default function Home() {
                 <Card>
                   <CardContent className="pt-6">
                     <div className="space-y-2">
-                      <h4 className="text-xl font-semibold">Frontend Excellence</h4>
+                      <h4 className="text-xl font-semibold">Frontend Architecture</h4>
                       <p className="text-muted-foreground text-sm">
-                        Deep expertise in React ecosystem, state management, performance
-                        optimization, and creating beautiful, accessible user interfaces.
+                        Leading platform architecture at Chatterworks — TypeScript conventions,
+                        component patterns, and state-driven UI that holds up as the surface area
+                        grows.
                       </p>
                     </div>
                   </CardContent>
@@ -113,10 +114,11 @@ export default function Home() {
                 <Card>
                   <CardContent className="pt-6">
                     <div className="space-y-2">
-                      <h4 className="text-xl font-semibold">Full-Stack Development</h4>
+                      <h4 className="text-xl font-semibold">Role-Based Systems</h4>
                       <p className="text-muted-foreground text-sm">
-                        Proficient in building complete applications from database design to
-                        deployment, with experience in Node.js, databases, and cloud platforms.
+                        Built Hydra end-to-end with five distinct user types — Admin, Vendor,
+                        Client, Agent, Driver — each with isolated permissions, dashboards, and
+                        workflows.
                       </p>
                     </div>
                   </CardContent>
@@ -125,10 +127,11 @@ export default function Home() {
                 <Card>
                   <CardContent className="pt-6">
                     <div className="space-y-2">
-                      <h4 className="text-xl font-semibold">Technical Leadership</h4>
+                      <h4 className="text-xl font-semibold">E-commerce at Scale</h4>
                       <p className="text-muted-foreground text-sm">
-                        Led teams in delivering high-quality projects, mentored junior developers,
-                        and established best practices for code quality and collaboration.
+                        Shipped storefront features at Carter&apos;s / OshKosh B&apos;gosh serving
+                        millions of customers — SSR/SSG in Next.js and integration with Salesforce
+                        Commerce Cloud for personalized merchandising surfaces.
                       </p>
                     </div>
                   </CardContent>
@@ -137,10 +140,10 @@ export default function Home() {
                 <Card>
                   <CardContent className="pt-6">
                     <div className="space-y-2">
-                      <h4 className="text-xl font-semibold">Open Source</h4>
+                      <h4 className="text-xl font-semibold">Mission-Critical Tooling</h4>
                       <p className="text-muted-foreground text-sm">
-                        Active contributor to open source projects with maintained libraries used by
-                        thousands of developers worldwide.
+                        Built and maintained MERN tooling at Cox Communications used by EMS, fire,
+                        and law enforcement teams — where downtime had operational consequences.
                       </p>
                     </div>
                   </CardContent>
@@ -169,22 +172,13 @@ export default function Home() {
 
             <div className="mx-auto grid max-w-3xl gap-6 text-center md:grid-cols-3">
               <div className="space-y-3">
-                <h3 className="font-semibold">Languages</h3>
-                <ul className="text-muted-foreground space-y-1 text-sm">
-                  <li>TypeScript / JavaScript</li>
-                  <li>Python</li>
-                  <li>SQL</li>
-                  <li>HTML / CSS</li>
-                </ul>
-              </div>
-
-              <div className="space-y-3">
                 <h3 className="font-semibold">Frontend</h3>
                 <ul className="text-muted-foreground space-y-1 text-sm">
                   <li>React / Next.js</li>
-                  <li>TailwindCSS</li>
-                  <li>Framer Motion</li>
-                  <li>Redux / Zustand</li>
+                  <li>TypeScript</li>
+                  <li>Redux</li>
+                  <li>Tailwind CSS</li>
+                  <li>React Native</li>
                 </ul>
               </div>
 
@@ -192,39 +186,48 @@ export default function Home() {
                 <h3 className="font-semibold">Backend</h3>
                 <ul className="text-muted-foreground space-y-1 text-sm">
                   <li>Node.js / Express</li>
-                  <li>Prisma / Drizzle</li>
-                  <li>tRPC / GraphQL</li>
-                  <li>REST APIs</li>
-                </ul>
-              </div>
-
-              <div className="space-y-3">
-                <h3 className="font-semibold">Databases</h3>
-                <ul className="text-muted-foreground space-y-1 text-sm">
                   <li>PostgreSQL</li>
+                  <li>Prisma</li>
                   <li>MongoDB</li>
-                  <li>Redis</li>
-                  <li>Supabase</li>
                 </ul>
               </div>
 
               <div className="space-y-3">
-                <h3 className="font-semibold">Tools & Platforms</h3>
+                <h3 className="font-semibold">Platform</h3>
                 <ul className="text-muted-foreground space-y-1 text-sm">
-                  <li>Git / GitHub</li>
                   <li>Docker</li>
-                  <li>Vercel / AWS</li>
+                  <li>Kubernetes</li>
+                  <li>Vercel</li>
                   <li>CI/CD</li>
+                  <li>Git</li>
                 </ul>
               </div>
 
               <div className="space-y-3">
-                <h3 className="font-semibold">Other</h3>
+                <h3 className="font-semibold">Quality</h3>
                 <ul className="text-muted-foreground space-y-1 text-sm">
-                  <li>Testing (Jest, Vitest)</li>
-                  <li>Figma / Design Systems</li>
-                  <li>Agile / Scrum</li>
-                  <li>Web Performance</li>
+                  <li>Jest</li>
+                  <li>Playwright</li>
+                  <li>TypeScript-first testing patterns</li>
+                </ul>
+              </div>
+
+              <div className="space-y-3">
+                <h3 className="font-semibold">Architecture</h3>
+                <ul className="text-muted-foreground space-y-1 text-sm">
+                  <li>REST</li>
+                  <li>OAuth2 / JWT</li>
+                  <li>Role-based access control</li>
+                  <li>SSR / SSG</li>
+                </ul>
+              </div>
+
+              <div className="space-y-3">
+                <h3 className="font-semibold">Payments</h3>
+                <ul className="text-muted-foreground space-y-1 text-sm">
+                  <li>Stripe subscriptions</li>
+                  <li>Webhook-driven state sync</li>
+                  <li>Billing flows</li>
                 </ul>
               </div>
             </div>

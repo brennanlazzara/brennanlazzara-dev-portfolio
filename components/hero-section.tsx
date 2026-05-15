@@ -29,9 +29,11 @@ export function HeroSection() {
             </span>
           </h1>
           <p className="text-muted-foreground mx-auto max-w-2xl text-lg leading-relaxed sm:text-xl md:text-2xl">
-            Senior Full-Stack Engineer crafting{" "}
-            <span className="text-foreground font-semibold">exceptional digital experiences</span>{" "}
-            with React, Next.js, and TypeScript.
+            Senior / Staff Frontend Engineer turning{" "}
+            <span className="text-foreground font-semibold">
+              ambiguous product surface area
+            </span>{" "}
+            into shippable architecture with React, Next.js, and TypeScript.
           </p>
         </div>
 
@@ -63,7 +65,7 @@ export function HeroSection() {
             size="lg"
             className="transition-transform hover:scale-105"
           >
-            <a href="/Brennan_Lazzara_Resume_April_9th_2026.pdf" download className="flex items-center">
+            <a href="/Brennan_Lazzara_Resume_May_7th_2026.pdf" download className="flex items-center">
               <Download className="mr-2 h-4 w-4" />
               Resume
             </a>
