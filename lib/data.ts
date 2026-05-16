@@ -38,7 +38,7 @@ export const projects: Project[] = [
       "Demo mode enabled rapid stakeholder testing with 6 pre-configured user personas",
     ],
     links: {
-      live: "https://hydra-sable-tau.vercel.app",
+      live: "https://demo.hydra-multiservice.com/",
       github: "https://github.com/HydraItalia/hydra",
       case_study: "hydra",
     },
@@ -147,8 +147,6 @@ export const projects: Project[] = [
       "Maintained 100% Lighthouse accessibility score",
       "Campaign A/B test showed 8% lift in add-to-cart rate",
     ],
-    hero: "/images/pdp-social-proof-hero.png",
-    images: ["/images/pdp-social-proof-1.png", "/images/pdp-social-proof-2.png"],
   },
   {
     slug: "pdp-oos-state-and-cursor",
@@ -188,8 +186,6 @@ export const projects: Project[] = [
       "Re-stock notification list grew by 3,500+ subscribers in first quarter",
       "Maintained product discoverability in search results for seasonal items",
     ],
-    hero: "/images/pdp-oos-hero.png",
-    images: ["/images/pdp-oos-1.png", "/images/pdp-oos-2.png"],
   },
 ]
 
