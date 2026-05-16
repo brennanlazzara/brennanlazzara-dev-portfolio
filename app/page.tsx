@@ -26,21 +26,19 @@ export default function Home() {
               Featured Projects
             </h2>
             <p className="text-muted-foreground text-lg">
-              My current side projects:
-              <br />
-              <strong>VoceViva</strong>, an Italian learning app and <strong>Hydra</strong>,
-              <span className="text-muted-foreground"> a restaurant supply platform.</span>
+              Side projects and case studies from my recent work — from{" "}
+              <strong>Hydra</strong> and <strong>VoceViva</strong> to storefront engineering at
+              Carter&apos;s / OshKosh.
             </p>
             <p className="text-muted-foreground text-sm">
-              Click on the cards below to learn more about my work on VoceViva and Hydra.
-              <br />
-              <span className="text-muted-foreground">More projects coming soon!</span>
+              Click any card for the full case study.
             </p>
           </div>
 
           <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2">
-            <ProjectCard project={featuredProjects[0]} />
-            <ProjectCard project={featuredProjects[1]} />
+            {featuredProjects.map((project) => (
+              <ProjectCard key={project.slug} project={project} />
+            ))}
           </div>
         </div>
       </section>
@@ -306,7 +304,7 @@ export default function Home() {
                         GitHub
                       </a>
                       <a
-                        href="https://linkedin.com/in/brennanlazzara"
+                        href="https://linkedin.com/in/brennan-lazzara"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-foreground focus-visible:ring-ring flex items-center gap-2 text-sm transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"

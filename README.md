@@ -1,11 +1,11 @@
 # Developer Portfolio
 
-A modern, professional developer portfolio built with Next.js 14, TypeScript, Tailwind CSS, and shadcn/ui. Features a clean design, responsive layout, dark mode support, and dynamic project showcase.
+A modern, professional developer portfolio built with Next.js 16, TypeScript, Tailwind CSS, and shadcn/ui. Features a clean design, responsive layout, dark mode support, and dynamic project showcase.
 
 ## Features
 
 ✨ **Modern Stack**
-- Next.js 14 with App Router
+- Next.js 16 with App Router
 - TypeScript for type safety
 - Tailwind CSS for styling
 - shadcn/ui components
@@ -220,7 +220,7 @@ NEXT_PUBLIC_SITE_URL=https://your-domain.com
 
 ## Tech Stack
 
-- **Framework**: Next.js 14 (App Router)
+- **Framework**: Next.js 16 (App Router)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS v4
 - **UI Components**: shadcn/ui (Radix UI primitives)

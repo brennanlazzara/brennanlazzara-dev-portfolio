@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s | Brennan Lazzara",
   },
   description:
-    "Full-stack developer building modern web experiences with React, Next.js, and TypeScript.",
+    "Senior / Staff Frontend Engineer building production systems at scale with React, Next.js, and TypeScript.",
   keywords: ["developer", "portfolio", "web development", "React", "Next.js", "TypeScript"],
   authors: [{ name: "Brennan Lazzara" }],
   creator: "Brennan Lazzara",
@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     url: "https://brennanlazzara.dev",
     title: "Brennan Lazzara - Developer Portfolio",
     description:
-      "Full-stack developer building modern web experiences with React, Next.js, and TypeScript.",
+      "Senior / Staff Frontend Engineer building production systems at scale with React, Next.js, and TypeScript.",
     siteName: "Brennan Lazzara Portfolio",
   },
   twitter: {
     card: "summary_large_image",
     title: "Brennan Lazzara - Developer Portfolio",
     description:
-      "Full-stack developer building modern web experiences with React, Next.js, and TypeScript.",
+      "Senior / Staff Frontend Engineer building production systems at scale with React, Next.js, and TypeScript.",
   },
   robots: {
     index: true,

@@ -6,12 +6,12 @@ export function StructuredData() {
     url: "https://brennanlazzara.dev",
     sameAs: [
       "https://github.com/brennanlazzara",
-      "https://www.linkedin.com/in/brennanlazzara",
+      "https://www.linkedin.com/in/brennan-lazzara",
     ],
-    jobTitle: "Senior Full-Stack Engineer",
+    jobTitle: "Senior / Staff Frontend Engineer",
     worksFor: {
       "@type": "Organization",
-      name: "ImagineX Consulting",
+      name: "Chatterworks",
     },
   }
 

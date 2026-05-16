@@ -38,7 +38,7 @@ export default async function Image() {
             color: "#94a3b8",
           }}
         >
-          Full-Stack Developer
+          Senior / Staff Frontend Engineer
         </div>
       </div>
     ),

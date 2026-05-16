@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, useId, useRef } from "react"
 import Image from "next/image"
 import { X } from "lucide-react"
 import { Button } from "./ui/button"
@@ -13,23 +13,45 @@ interface ProjectModalProps {
 }
 
 export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
+  const titleId = useId()
+  const closeButtonRef = useRef<HTMLButtonElement>(null)
+  const previouslyFocusedRef = useRef<HTMLElement | null>(null)
+
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden"
-    } else {
-      document.body.style.overflow = "unset"
+    if (!isOpen) return
+
+    previouslyFocusedRef.current = document.activeElement as HTMLElement | null
+    document.body.style.overflow = "hidden"
+    closeButtonRef.current?.focus()
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose()
     }
+    document.addEventListener("keydown", onKeyDown)
+
     return () => {
+      document.removeEventListener("keydown", onKeyDown)
       document.body.style.overflow = "unset"
+      previouslyFocusedRef.current?.focus()
     }
-  }, [isOpen])
+  }, [isOpen, onClose])
 
   if (!isOpen) return null
 
   return (
-    <div className="bg-background/80 fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm">
-      <div className="bg-background relative mx-4 max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-lg border p-6 shadow-lg md:p-8">
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby={titleId}
+      onClick={onClose}
+      className="bg-background/80 fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm"
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="bg-background relative mx-4 max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-lg border p-6 shadow-lg md:p-8"
+      >
         <Button
+          ref={closeButtonRef}
           variant="ghost"
           size="icon"
           className="absolute top-4 right-4"
@@ -42,7 +64,9 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
         <div className="space-y-8">
           {/* Header */}
           <div className="space-y-4">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">{project.title}</h2>
+            <h2 id={titleId} className="text-3xl font-bold tracking-tighter sm:text-4xl">
+              {project.title}
+            </h2>
             <div className="text-muted-foreground flex flex-wrap gap-4 text-sm">
               <span>{project.role}</span>
               <span>•</span>

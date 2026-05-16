@@ -86,7 +86,7 @@ export function HeroSection() {
             <Github className="h-6 w-6 transition-transform group-hover:rotate-12" />
           </a>
           <a
-            href="https://linkedin.com/in/brennanlazzara"
+            href="https://linkedin.com/in/brennan-lazzara"
             target="_blank"
             rel="noopener noreferrer"
             className="group text-muted-foreground hover:text-foreground focus-visible:ring-ring transition-all hover:scale-125 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
