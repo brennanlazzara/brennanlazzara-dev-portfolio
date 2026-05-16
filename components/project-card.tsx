@@ -56,17 +56,15 @@ export function ProjectCard({ project }: ProjectCardProps) {
           )}
         </CardContent>
         <CardFooter className="justify-center gap-2">
-          {project.links?.case_study && (
-            <Button
-              variant="default"
-              size="sm"
-              className="group/btn hover:shadow-primary/25 transition-all hover:shadow-lg"
-              onClick={() => setIsModalOpen(true)}
-            >
-              View Case Study
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-            </Button>
-          )}
+          <Button
+            variant="default"
+            size="sm"
+            className="group/btn hover:shadow-primary/25 transition-all hover:shadow-lg"
+            onClick={() => setIsModalOpen(true)}
+          >
+            View Case Study
+            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
+          </Button>
           {project.links?.live && (
             <Button
               asChild

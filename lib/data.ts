@@ -9,16 +9,13 @@ export interface Project {
   links?: {
     live?: string
     github?: string
-    case_study?: string
   }
-  hero?: string
   images?: string[]
   description?: string
   challenges?: string[]
   solutions?: string[]
   results?: string[]
   featured?: boolean
-  category?: "work" | "personal"
 }
 
 export const projects: Project[] = [
@@ -40,10 +37,8 @@ export const projects: Project[] = [
     links: {
       live: "https://demo.hydra-multiservice.com/",
       github: "https://github.com/HydraItalia/hydra",
-      case_study: "hydra",
     },
     featured: true,
-    category: "personal",
     description:
       "Goal: Modernize HORECA procurement in Roma by connecting restaurants with multiple vendors through a unified platform with role-based access, smart pricing agreements, and real-time inventory.",
     challenges: [
@@ -67,7 +62,6 @@ export const projects: Project[] = [
       "Audit trails for compliance and change tracking",
       "Scalable foundation for expansion beyond Roma region",
     ],
-    hero: "/images/hydra-hero.png",
     images: ["/images/hydra-1.png", "/images/hydra-2.png", "/images/hydra-3.png", "/images/hydra-4.png"],
   },
   {
@@ -86,10 +80,8 @@ export const projects: Project[] = [
     links: {
       live: "https://italian-with-brenni-w5zj.vercel.app/",
       github: "https://github.com/brennanlazzara/voce-viva",
-      case_study: "voceviva",
     },
     featured: true,
-    category: "personal",
     description:
       "Goal: faster iteration and better DX for shipping language exercises. Re-architected routes, added typed data layer, and tuned performance.",
     challenges: [
@@ -106,7 +98,6 @@ export const projects: Project[] = [
       "Core flows stable; easier to add new tenses",
       "Cleaner SSR/SEO surface for public pages",
     ],
-    hero: "/images/voceviva-hero.png",
     images: ["/images/voceviva-1.png", "/images/voceviva-2.png", "/images/voceviva-3.png", "/images/voceviva-4.png"],
   },
   {
@@ -123,11 +114,7 @@ export const projects: Project[] = [
       "Delivered pixel-perfect UI across mobile, tablet, and desktop breakpoints",
       "Improved crawlability and SEO by maintaining semantic HTML structure",
     ],
-    links: {
-      case_study: "/work/pdp-social-proof-dynamic-yield",
-    },
     featured: true,
-    category: "work",
     description:
       "Led the implementation of dynamic social proof messaging on high-traffic PDPs to increase customer trust and drive conversions through real-time inventory and popularity signals.",
     challenges: [
@@ -162,11 +149,7 @@ export const projects: Project[] = [
       "Fixed cursor pointer semantics on disabled CTAs for better UX",
       "Increased re-stock notification sign-ups by 60%",
     ],
-    links: {
-      case_study: "/work/pdp-oos-state-and-cursor",
-    },
     featured: true,
-    category: "work",
     description:
       "Redesigned out-of-stock product experience on PDPs to preserve SEO value, improve user experience, and capture re-stock interest instead of showing generic 404 pages.",
     challenges: [
@@ -190,9 +173,3 @@ export const projects: Project[] = [
 ]
 
 export const featuredProjects = projects.filter((p) => p.featured)
-export const workProjects = projects.filter((p) => p.category === "work")
-export const personalProjects = projects.filter((p) => p.category === "personal")
-
-export function getProjectBySlug(slug: string): Project | undefined {
-  return projects.find((p) => p.slug === slug)
-}
