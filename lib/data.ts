@@ -24,8 +24,8 @@ export interface Project {
 export const projects: Project[] = [
   {
     slug: "hydra",
-    title: "Hydra — Restaurant Supply Platform",
-    role: "Founder & Full-Stack Engineer",
+    title: "Hydra — B2B Hospitality Marketplace",
+    role: "Founding Engineer & Technical Architect",
     period: "2024–2025",
     stack: ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS", "NextAuth", "Vercel", "Zustand"],
     summary:

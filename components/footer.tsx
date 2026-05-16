@@ -10,7 +10,7 @@ export function Footer() {
           <div className="space-y-3">
             <h3 className="text-lg font-semibold">Brennan Lazzara</h3>
             <p className="text-muted-foreground text-sm">
-              Developer building modern web experiences.
+              Senior / Staff Frontend Engineer · React, Next.js, TypeScript.
             </p>
           </div>
 
