@@ -65,7 +65,7 @@ export function HeroSection() {
             size="lg"
             className="transition-transform hover:scale-105"
           >
-            <a href="/Brennan_Lazzara_Resume_May_7th_2026.pdf" download className="flex items-center">
+            <a href="/Brennan_Lazzara_Resume.pdf" download className="flex items-center">
               <Download className="mr-2 h-4 w-4" />
               Resume
             </a>

@@ -22,13 +22,13 @@ export const projects: Project[] = [
   {
     slug: "hydra",
     title: "Hydra — B2B Hospitality Marketplace",
-    role: "Founding Engineer & Technical Architect",
+    role: "Full-Stack Engineer & Technical Architect",
     period: "2024–2025",
     stack: ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "Tailwind CSS", "NextAuth", "Vercel", "Zustand"],
     summary:
       "A multi-role B2B platform where restaurants, vendors, drivers, and agents manage catalog, orders, inventory, and deliveries in one place.",
     impact: [
-      "Built complete procurement system with 4 role-based portals and 25+ dashboard routes",
+      "Built complete procurement system with five role-based portals and 25+ dashboard routes",
       "Implemented transaction-safe cart with agreement pricing integration",
       "Seeded 335 test files covering pricing logic, cart validation, and catalog filters",
       "Deployed on Vercel with Neon Postgres and CI/CD preview environments",
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     },
     featured: true,
     description:
-      "Goal: Modernize HORECA procurement in Roma by connecting restaurants with multiple vendors through a unified platform with role-based access, smart pricing agreements, and real-time inventory.",
+      "Goal: Modernize HORECA procurement by connecting restaurants with multiple vendors through a unified platform with role-based access, smart pricing agreements, and real-time inventory.",
     challenges: [
       "Multi-role architecture (Admin, Agent, Vendor, Client, Driver) with distinct workflows",
       "Complex pricing logic with client-specific agreements (base, discount, override modes)",
@@ -60,7 +60,7 @@ export const projects: Project[] = [
       "Client-specific pricing with discount agreements and override support",
       "Real-time inventory with lead time tracking across vendors",
       "Audit trails for compliance and change tracking",
-      "Scalable foundation for expansion beyond Roma region",
+      "Scalable foundation for expansion to new regions and vendor networks",
     ],
     images: ["/images/hydra-1.png", "/images/hydra-2.png", "/images/hydra-3.png", "/images/hydra-4.png"],
   },

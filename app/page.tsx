@@ -69,25 +69,24 @@ export default function Home() {
             {/* Bio */}
             <div className="prose prose-gray dark:prose-invert max-w-none space-y-4 text-center">
               <p className="text-muted-foreground text-lg">
-                I'm a frontend architect based in Brooklyn, working primarily in React, Next.js, and
-                TypeScript. Nine years in, I've shipped storefront features at Carter's serving
+                I&apos;m a frontend architect based in New York, working primarily in React, Next.js, and
+                TypeScript. Six years in, I&apos;ve shipped storefront features at Carter&apos;s serving
                 millions of customers, built mission-critical MERN tooling at Cox Communications
-                used by EMS and law enforcement teams, and most recently founded Hydra — a B2B
-                marketplace for the Italian hospitality industry, taken from concept to production
-                deployment.
+                used by EMS and law enforcement teams, and most recently built Hydra, a
+                multi-vendor B2B marketplace platform.
               </p>
               <p className="text-muted-foreground text-lg">
-                I care about the parts of frontend work that don't always get talked about: state
-                architecture that doesn't collapse under feature pressure, component systems that
+                I care about the parts of frontend work that don&apos;t always get talked about: state
+                architecture that doesn&apos;t collapse under feature pressure, component systems that
                 other engineers actually want to use, and TypeScript that makes wrong code hard to
-                write. I'm currently leading platform architecture at Chatterworks, a pre-Series A
+                write. I&apos;m currently leading platform architecture at Chatterworks, a pre-Series A
                 SaaS startup.
               </p>
               <p className="text-muted-foreground text-lg">
-                On the side I'm building VoceViva, an Italian-learning app — a chance to experiment
+                On the side I&apos;m building VoceViva, an Italian-learning app — a chance to experiment
                 with typed data models, performance budgets, and simple, joyful UI without a roadmap
-                meeting in sight. The Italian connection isn't incidental: I lived in Rome for five
-                years before recently moving back to the US. Open to senior and staff frontend roles
+                meeting in sight. The Italian connection isn&apos;t incidental: I&apos;m Sicilian-American and
+                speak Italian at a professional level. Open to senior and staff frontend roles
                 where the engineering work is genuinely hard and the team takes craft seriously.
               </p>
             </div>
